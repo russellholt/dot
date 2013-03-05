@@ -75,3 +75,4 @@ let @e='i_/_xdwbP'
 
 let g:openbrowser_default_search = 'duckduckgo'
 map \s <Plug>(openbrowser-search)
+
