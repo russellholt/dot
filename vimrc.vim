@@ -41,7 +41,7 @@ if has ("gui_running")
 	set background=dark
 	colorscheme russell
 	set transparency=2
-    set guifont=Anonymous\ Pro:h12
+    set guifont=Anonymous\ Pro:h11
     set antialias
     set guioptions-=T
 else
@@ -69,6 +69,7 @@ let g:jsbeautify_engin = "node"
 map \f :call JsBeautify()<cr>
 map \t :!tidy -wrap 160 -q<cr>
 map \g :NERDTree<cr>
+map \r :%s/\r/\r/g<cr>
 
 " swap _ separated words, like template_small -> small_template
 let @e='i_/_xdwbP'
