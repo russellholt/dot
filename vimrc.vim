@@ -8,6 +8,7 @@ set showcmd
 set ruler
 set backspace=indent,eol,start
 set nowrap
+set nojoinspaces
 
 call pathogen#infect()
 
@@ -36,7 +37,6 @@ let g:no_html_tab_mapping = 1
 let g:html_template = "~/.vim/templates/htmltemplate.html"
 let g:no_html_toolbar = 'yes'
 
-
 if has ("gui_running")
 	set background=dark
 	colorscheme russell
@@ -46,6 +46,7 @@ if has ("gui_running")
     set guioptions-=T
 else
     set t_Co=256
+	set background=dark
     colorscheme desert256
 endif
 
@@ -71,8 +72,10 @@ map \t :!tidy -wrap 160 -q<cr>
 map \g :NERDTree<cr>
 
 " swap _ separated words, like template_small -> small_template
-let @e='i_/_xdwbP'
+let @e='i_/_xdebP'
 
 let g:openbrowser_default_search = 'duckduckgo'
 map \s <Plug>(openbrowser-search)
+
+let g:vim_markdown_folding_disabled = 'true'
 
