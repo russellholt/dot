@@ -6,5 +6,3 @@ set wrapmargin=10
 set wrap
 map j gj
 map k gk
-
-
