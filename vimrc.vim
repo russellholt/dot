@@ -39,7 +39,7 @@ let g:no_html_toolbar = 'yes'
 
 if has ("gui_running")
 	set background=dark
-	colorscheme russell
+	colorscheme twilight256
 	set transparency=2
     set guifont=Anonymous\ Pro:h11
     set antialias
