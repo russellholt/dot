@@ -10,6 +10,9 @@ set backspace=indent,eol,start
 set nowrap
 set nojoinspaces
 
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set vb t_vb=
+
 call pathogen#infect()
 
 runtime ftplugin/man.vim
@@ -24,6 +27,10 @@ filetype plugin on
 " map \{ i{<Esc>ea}<Esc>
 map \m <Esc>:%! tr '\r' '\n'<Return>
 set number
+
+" underline with single dash
+map \u <Esc>Ypv$r-
+map \U <Esc>Ypv$r=
 
 noremap <Up> gk
 noremap <Down> gj
@@ -41,10 +48,12 @@ if has ("gui_running")
 	set background=dark
 	colorscheme russell
 	set transparency=2
-    set guifont=Anonymous\ Pro:h11
+    set guifont=Anonymous\ Pro:h12
     set antialias
     set guioptions-=T
 else
+    set mouse=a
+    set ttymouse=xterm2
     set t_Co=256
 	set background=dark
     colorscheme desert256
@@ -73,10 +82,19 @@ map \g :NERDTree<cr>
 map \r :%s/\r/\r/g<cr>
 
 " swap _ separated words, like template_small -> small_template
-let @e='i_/_xdebP'
+let @e='i_/_xdebPb'
 
 let g:openbrowser_default_search = 'duckduckgo'
 map \s <Plug>(openbrowser-search)
 
 let g:vim_markdown_folding_disabled = 'true'
+
+set sessionoptions+=tabpages,globals
+
+
+let g:airline_powerline_fonts = 0
+
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
 
