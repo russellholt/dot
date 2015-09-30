@@ -1,7 +1,10 @@
 " set textwidth=100
 " set wrapmargin=10
-"set formatoptions=tcqanb
+" set formatoptions=tcqanb
 
+set formatoptions=n
+set linebreak
+set nolist
 
 colorscheme mrkn256
 set linebreak
