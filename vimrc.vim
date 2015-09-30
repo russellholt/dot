@@ -1,4 +1,18 @@
-syntax on
+set t_Co=256
+set background=dark
+
+if has ("gui_running")
+	colorscheme russell
+	set transparency=2
+    set guifont=Anonymous\ Pro:h12
+    set antialias
+    set guioptions-=T
+else
+    set mouse=a
+    set ttymouse=xterm2
+    colorscheme russell
+endif
+
 set shiftwidth=4
 set tabstop=4
 set expandtab
@@ -44,20 +58,7 @@ let g:no_html_tab_mapping = 1
 let g:html_template = "~/.vim/templates/htmltemplate.html"
 let g:no_html_toolbar = 'yes'
 
-if has ("gui_running")
-	set background=dark
-	colorscheme russell
-	set transparency=2
-    set guifont=Anonymous\ Pro:h12
-    set antialias
-    set guioptions-=T
-else
-    set mouse=a
-    set ttymouse=xterm2
-    set t_Co=256
-	set background=dark
-    colorscheme desert256
-endif
+
 
 augroup md
     autocmd BufRead *.mkd set ai formatoptions=tcroqn2 comments=n:&gt;
@@ -98,3 +99,4 @@ let g:airline_powerline_fonts = 0
 " python powerline_setup()
 " python del powerline_setup
 
+syntax on
