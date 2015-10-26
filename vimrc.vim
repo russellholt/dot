@@ -1,5 +1,3 @@
-set t_Co=256
-set background=dark
 
 if has ("gui_running")
 	colorscheme russell
@@ -7,7 +5,11 @@ if has ("gui_running")
     set guifont=Anonymous\ Pro:h12
     set antialias
     set guioptions-=T
+    set t_Co=256
+    set background=dark
 else
+    set t_Co=256
+    set background=dark
     set mouse=a
     set ttymouse=xterm2
     colorscheme russell

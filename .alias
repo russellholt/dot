@@ -1,0 +1,1 @@
+alias da='date "+%a %d %b %Y, %R"'
