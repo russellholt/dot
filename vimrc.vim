@@ -103,5 +103,7 @@ let g:airline_powerline_fonts = 0
 " python from powerline.vim import setup as powerline_setup
 " python powerline_setup()
 " python del powerline_setup
+"
+let g:goyo_height = '95%'
 
 syntax on
