@@ -15,3 +15,6 @@ map j gj
 map k gk
 map $ g$
 map ^ g^
+
+setlocal spell spelllang=en_us
+
