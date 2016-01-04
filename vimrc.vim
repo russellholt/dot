@@ -2,7 +2,7 @@
 if has ("gui_running")
 	colorscheme russell
 	set transparency=2
-    set guifont=Anonymous\ Pro:h12
+    set guifont=Anonymous\ Pro:h14
     set antialias
     set guioptions-=T
     set t_Co=256
