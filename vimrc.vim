@@ -25,6 +25,7 @@ set ruler
 set backspace=indent,eol,start
 set nowrap
 set nojoinspaces
+set cm=blowfish2
 
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set vb t_vb=
