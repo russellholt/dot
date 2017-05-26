@@ -1,19 +1,12 @@
 
-if has ("gui_running")
-	colorscheme russell
-	set transparency=2
-    set guifont=Anonymous\ Pro:h14
-    set antialias
-    set guioptions-=T
-    set t_Co=256
-    set background=dark
-else
-    set t_Co=256
-    set background=dark
-    set mouse=a
-    set ttymouse=xterm2
-    colorscheme russell
-endif
+
+" set max chars for syntax coloring. huge speedup for long lines
+" like embeded image data in css
+set synmaxcol=192
+
+
+noremap <ScrollWheelLeft> <nop>
+noremap <ScrollWheelRight> <nop>
 
 set shiftwidth=4
 set tabstop=4
@@ -99,12 +92,39 @@ let g:vim_markdown_folding_disabled = 'true'
 set sessionoptions+=tabpages,globals
 
 
-let g:airline_powerline_fonts = 0
+" let g:airline_powerline_fonts = 0
 
 " python from powerline.vim import setup as powerline_setup
 " python powerline_setup()
 " python del powerline_setup
 "
 let g:goyo_height = '95%'
+
+" let g:gruvbox_italic=1
+" let g:gruvbox_italicize_comments=1
+let g:gruvbox_contrast_dark = 'medium'
+
+" Make Airline show up by default
+set laststatus=2
+
+" let g:airline_theme='dark'
+
+if has ("gui_running")
+	" colorscheme russell
+	set transparency=2
+    set guifont=Menlo:h12
+    " set guifont=Anonymous\ Pro:h14
+    set antialias
+    set guioptions-=T
+    set t_Co=256
+    set background=dark
+else
+    set t_Co=256
+    set background=dark
+    set mouse=a
+    set ttymouse=xterm2
+    " colorscheme twilight256
+    colorscheme gruvbox
+endif
 
 syntax on

@@ -6,7 +6,9 @@ set formatoptions=n
 set linebreak
 set nolist
 
-colorscheme mrkn256
+colorscheme gruvbox
+" colorscheme SlateDark
+
 set linebreak
 set wrap
 set nolist
@@ -16,5 +18,5 @@ map k gk
 map $ g$
 map ^ g^
 
-"setlocal spell spelllang=en_us
+" setlocal spell spelllang=en_us
 
