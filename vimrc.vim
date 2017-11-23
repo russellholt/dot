@@ -11,7 +11,6 @@ noremap <ScrollWheelRight> <nop>
 set shiftwidth=4
 set tabstop=4
 set expandtab
-set modeline
 set autoindent
 set showcmd
 set ruler
@@ -19,6 +18,7 @@ set backspace=indent,eol,start
 set nowrap
 set nojoinspaces
 set cm=blowfish2
+set modeline
 
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set vb t_vb=
@@ -73,8 +73,8 @@ let mapleader = ","
 runtime macros/matchit.vim
 
 
-let g:jsbeautify = {"indent_size":4, "indent_char": " "}
-let g:jsbeautify_engin = "node"
+" let g:jsbeautify = {"indent_size":4, "indent_char": " "}
+" let g:jsbeautify_engin = "node"
 
 map \f :call JsBeautify()<cr>
 map \t :!tidy -wrap 160 -q<cr>
