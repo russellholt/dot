@@ -128,3 +128,10 @@ else
 endif
 
 syntax on
+
+ia tempalt template
+ia tempalte template
+ia deafult default
+ia prevelence prevalence
+
+
